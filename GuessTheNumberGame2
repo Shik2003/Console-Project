@@ -7,6 +7,7 @@ This is on the Java console project.
  * Chichhula Laasya Priyakar
  */
 // Java program for the above approach
+import java.util.ArrayList;
 import java.util.Scanner;
  
 public class GuessTheNumberGame2 {
@@ -23,6 +24,8 @@ public class GuessTheNumberGame2 {
         int number = 1 + (int)(100
                                * Math.random());
  
+        ArrayList<Integer> history = new ArrayList<Integer>();
+        
         // Given K trials
         int K = 5;
  
@@ -43,6 +46,8 @@ public class GuessTheNumberGame2 {
             // Take input for guessing
             guess = sc.nextInt();
  
+          
+            history.add(guess);
             // If the number is guessed
             if (number == guess) {
                 System.out.println(
@@ -71,8 +76,12 @@ public class GuessTheNumberGame2 {
  
             System.out.println(
                 "The number was " + number+ ".");
+            
         }
+        
+        System.out.println(history);  
     }
+    
  
     // Driver Code
     public static void
@@ -82,4 +91,7 @@ public class GuessTheNumberGame2 {
         // Function Call
         guessingNumberGame();
     }
+    
+   
 }
+
