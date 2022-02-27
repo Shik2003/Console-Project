@@ -84,13 +84,13 @@ public class GuessTheNumberGame2 {
     
  
     // Driver Code
-    public static void
-    main(String arg[])
-    {
+  //  public static void
+   // main(String arg[])
+    //{
  
         // Function Call
-        guessingNumberGame();
-    }
+      //  guessingNumberGame();
+    //}
     
    
 }
